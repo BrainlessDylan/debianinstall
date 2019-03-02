@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Ubuntu (GNOME) 18.04 setup script.
+# Debian Setup Script
 
 dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 
@@ -9,10 +9,9 @@ dpkg -l | grep -qw gdebi || sudo apt-get install -yyq gdebi
 sudo apt update
 
 sudo apt install virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack \
-net-tools htop grsync lame asunder soundconverter brasero git mc flatpak \
-openssh-server sshfs gedit-plugin-text-size simplescreenrecorder nano \
-ubuntu-restricted-extras mpv vlc gthumb gnome-tweaks tracker chrome-gnome-shell \
-gnome-tweak-tool qt5-style-plugins spell synaptic -yy
+net-tools htop grsync lame asunder soundconverter brasero git mc shutter \
+openssh-server sshfs gedit-plugin-text-size obs kdenlive nano mpv vlc \
+remmina qt5-style-plugins spell synaptic okular audacity terminator -yy
 
 # Add me to any groups I might need to be a part of:
 
@@ -39,7 +38,7 @@ rm -rf /tmp/gc-install-tmp
 sudo apt-get install -y gimp audacious nautilus-dropbox
 
 ## Games
-sudo apt-get install -y steam
+sudo apt-get install -y steam lutris
 
 # Gotta reboot now:
 sudo apt update && sudo apt upgrade -y
