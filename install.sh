@@ -11,7 +11,7 @@ sudo apt update
 
 sudo apt install virtualbox virtualbox-guest-additions-iso virtualbox-ext-pack \ htop grsync lame asunder soundconverter brasero git mc shutter \
 openssh-server sshfs gedit-plugin-text-size obs kdenlive nano mpv vlc \
-qt5-style-plugins spell synaptic okular terminator -yy
+spell synaptic okular terminator -yy
 
 # Add me to any groups I might need to be a part of:
 
